@@ -55,10 +55,10 @@ class visualizer():
                 y2 = pt2[1]
                 
                 if index%2 ==0 :    #printing
-                    num_btw = 3*int(math.sqrt((x2 - x1)**2 + (y2 - y1)**2))#Number of points btw 2 points
+                    num_btw = 3*int(math.sqrt((x2 - x1)**2 + (y2 - y1)**2))#Number of points btw 2 points   -- Adjust speed 
                     time_print_individual = time_print_individual + num_btw
                 else:           #travelling
-                    num_btw = 1*int(math.sqrt((x2 - x1)**2 + (y2 - y1)**2))#Number of points btw 2 points
+                    num_btw = 1*int(math.sqrt((x2 - x1)**2 + (y2 - y1)**2))#Number of points btw 2 points   -- Adjust speed
                     time_travel_individual = time_travel_individual + num_btw
                 
                 for t in range(num_btw):
